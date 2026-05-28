@@ -1209,6 +1209,18 @@
     mob.classList.toggle('open');
   });
 
+  // Close mobile menu after clicking links
+
+  const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+  mobileLinks.forEach(link => {
+
+   link.addEventListener('click', () => {
+     mob.classList.remove('open');
+   });
+
+  });
+
   // REVEAL ANIMATION
 
   const reveals = document.querySelectorAll('.reveal');
