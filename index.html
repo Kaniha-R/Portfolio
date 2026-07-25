@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kaniha — Portfolio</title>
+  <title>Kaniha R | AI & Data Science Student | Full Stack Developer</title>
 
+  <link rel="icon" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
@@ -539,60 +540,86 @@
 
     /* CONTACT */
 
-    #contact{
-      background:var(--surface);
-    }
-
     .contact-wrapper{
-      margin-top:60px;
-
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:40px;
+        margin-top:60px;
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+        gap:30px;
     }
 
     .contact-card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:35px;
+        background:var(--card);
+        border:1px solid var(--border);
+        border-radius:18px;
+        padding:35px;
+        transition:.35s;
+    }
+
+    .contact-card:hover{
+        transform:translateY(-8px);
+        border-color:rgba(56,189,248,.35);
+        box-shadow:0 20px 45px rgba(0,0,0,.35);
     }
 
     .contact-heading{
-      font-size:1.6rem;
-      font-weight:700;
+        font-size:1.8rem;
+        font-weight:700;
+        margin-bottom:18px;
     }
 
     .contact-text{
-      margin-top:16px;
-      color:var(--muted);
-      line-height:1.9;
+        color:var(--muted);
+        line-height:1.9;
     }
 
     .contact-links{
-      margin-top:30px;
-      display:flex;
-      flex-direction:column;
-      gap:18px;
+        display:flex;
+        flex-direction:column;
+        gap:18px;
     }
 
     .contact-link{
-      text-decoration:none;
-      color:var(--text);
-
-      padding:16px 20px;
-      border-radius:12px;
-
-      background:rgba(255,255,255,0.02);
-      border:1px solid var(--border);
-
-      transition:0.3s;
+        display:flex;
+        align-items:center;
+        padding:18px 20px;
+        text-decoration:none;
+        border:1px solid var(--border);
+        border-radius:12px;
+        background:rgba(255,255,255,.03);
+        transition:.3s;
     }
 
     .contact-link:hover{
-      transform:translateX(8px);
-      border-color:var(--sky);
-      color:var(--sky);
+        transform:translateX(8px);
+        border-color:var(--sky);
+        background:rgba(56,189,248,.08);
+    }
+
+    .contact-link strong{
+        display:block;
+        color:white;
+        margin-bottom:5px;
+    }
+
+    .contact-link span{
+        color:var(--muted);
+    }
+
+    .contact-btn{
+        margin-top:30px;
+    }
+
+    .contact-btn .btn{
+        width:100%;
+        justify-content:center;
+    }
+
+    @media(max-width:768px){
+
+        .contact-wrapper{
+            grid-template-columns:1fr;
+        }
+
     }
 
     /* FOOTER */
@@ -790,25 +817,49 @@
 
       <div class="about-card reveal">
         <div class="about-icon">🎓</div>
-        <div class="about-title">AI & DS Student</div>
+        <div class="about-title">AI & Data Science Student</div>
         <div class="about-desc">
-          Pursuing Artificial Intelligence & Data Science with strong interest in Machine Learning, Data Analytics, and real-world AI applications.
+          I'm a B.Tech AI & Data Science student passionate about Artificial Intelligence, Machine Learning, Data Analytics, and building innovative software solutions that solve real-world problems.
         </div>
       </div>
 
       <div class="about-card reveal">
         <div class="about-icon">💻</div>
-        <div class="about-title">Web Developer</div>
+        <div class="about-title">Full Stack Web Developer</div>
         <div class="about-desc">
-          Building modern responsive websites using HTML, CSS, JavaScript, React, and clean UI/UX design principles.
+          I design and develop modern, responsive, and user-friendly websites using HTML, CSS, JavaScript, React, Python, Flask, SQL, and REST APIs with a focus on clean UI and performance.
         </div>
       </div>
 
       <div class="about-card reveal">
         <div class="about-icon">🚀</div>
-        <div class="about-title">Real Projects</div>
+        <div class="about-title">Freelancer & Problem Solver</div>
         <div class="about-desc">
-          Worked on symposium websites, OCR-based systems, data dashboards, and academic analysis projects with team collaboration.
+          I'm available for freelance projects including business websites, landing pages, portfolio websites, AI-powered web applications, dashboards, and custom web solutions tailored to client needs.
+        </div>
+      </div>
+
+      <div class="about-card reveal">
+        <div class="about-icon">🤖</div>
+        <div class="about-title">AI Projects</div>
+        <div class="about-desc">
+          I enjoy developing AI-based applications such as resume analyzers, OCR systems, automation tools, and data-driven solutions using Python, Machine Learning, and Generative AI.
+        </div>
+      </div>
+
+      <div class="about-card reveal">
+        <div class="about-icon">📈</div>
+        <div class="about-title">Continuous Learner</div>
+        <div class="about-desc">
+          I continuously improve my skills through internships, hackathons, certifications, and hands-on projects while exploring the latest technologies in AI and Full Stack Development.
+        </div>
+      </div>
+
+      <div class="about-card reveal">
+        <div class="about-icon">🤝</div>
+        <div class="about-title">Let's Work Together</div>
+        <div class="about-desc">
+          I'm open to internships, freelance work, collaborations, and exciting opportunities. My goal is to deliver high-quality, scalable, and impactful digital solutions.
         </div>
       </div>
 
@@ -918,30 +969,39 @@
     <span class="section-tag">Highlights</span>
 
     <h2 class="section-title">
-      Real World <span class="accent">Journey.</span>
+      My Professional <span class="accent">Journey.</span>
     </h2>
-    
+
     <div class="stats-grid">
-    
+
       <div class="stat-card reveal">
-        <div class="stat-number">5+</div>
-        <div class="stat-text">Projects Built</div>
+        <div class="stat-number">10+</div>
+        <div class="stat-text">Projects Completed</div>
       </div>
 
       <div class="stat-card reveal">
-
-        <div class="stat-number">AI</div>
-        <div class="stat-text">AI & DS Student</div>
-      </div>
-      
-      <div class="stat-card reveal">
-        <div class="stat-number">ML</div>
-        <div class="stat-text">Machine Learning Learner</div>
+        <div class="stat-number">15+</div>
+        <div class="stat-text">Technologies Learned</div>
       </div>
 
       <div class="stat-card reveal">
-        <div class="stat-number">UI</div>
-        <div class="stat-text">Freelance Web Developer</div>
+        <div class="stat-number">3+</div>
+        <div class="stat-text">Internships & Training</div>
+      </div>
+
+      <div class="stat-card reveal">
+        <div class="stat-number">10+</div>
+        <div class="stat-text">Certificates Earned</div>
+      </div>
+
+      <div class="stat-card reveal">
+        <div class="stat-number">8.333</div>
+        <div class="stat-text">Current GPA</div>
+      </div>
+
+      <div class="stat-card reveal">
+        <div class="stat-number">2028</div>
+        <div class="stat-text">Expected Graduation</div>
       </div>
 
     </div>
@@ -964,75 +1024,194 @@
 
     <div class="projects-grid">
 
+      <!-- ================= PROJECT 01 ================= -->
+
       <div class="proj-card reveal">
 
-        <span class="proj-emoji">🌐</span>
+        <span class="proj-emoji">🛍️</span>
 
-        <div class="proj-num">PROJECT 01</div>
+        <div class="proj-num">CLIENT PROJECT</div>
 
         <div class="proj-title">
-          Portfolio Website
+          Noolzzy – Official Business Website
         </div>
 
         <div class="proj-desc">
-          Designed and developed a modern responsive portfolio website with animations and responsive layouts.
+          Designed and developed the official website for Noolzzy, a handmade accessories brand. Built a responsive business website featuring product showcases, smooth animations, and a modern user experience.
         </div>
 
         <div class="proj-tags">
           <span class="proj-tag">HTML</span>
           <span class="proj-tag">CSS</span>
           <span class="proj-tag">JavaScript</span>
+          <span class="proj-tag">Client Project</span>
+          <span class="proj-tag">Live Website</span>
+        </div>
+
+        <div class="hero-cta" style="margin-top:20px;">
+          <a href="https://kaniha-r.github.io/noolzzy-website/" target="_blank" class="btn btn-primary">
+            🌐 Visit Website
+          </a>
         </div>
 
       </div>
 
+      <!-- ================= PROJECT 02 ================= -->
+
       <div class="proj-card reveal">
 
-        <span class="proj-emoji">📊</span>
+        <span class="proj-emoji">🎉</span>
 
         <div class="proj-num">PROJECT 02</div>
 
         <div class="proj-title">
-          Retail Dashboard
+          Interactive Celebration Website
         </div>
 
         <div class="proj-desc">
-          Built interactive Power BI dashboards for revenue analysis, customer insights, and data visualization.
+          Developed an interactive celebration website featuring immersive animations, mini games, photo gallery, music controls, progress tracking, fireworks, and a responsive user experience.
         </div>
 
         <div class="proj-tags">
-          <span class="proj-tag">Power BI</span>
-          <span class="proj-tag">Data Analysis</span>
-          <span class="proj-tag">Visualization</span>
+          <span class="proj-tag">HTML</span>
+          <span class="proj-tag">CSS</span>
+          <span class="proj-tag">JavaScript</span>
+          <span class="proj-tag">Interactive UI</span>
+        </div>
+
+        <div class="hero-cta" style="margin-top:20px;">
+          <a href="https://kaniha-r.github.io/Birthday-suprise-demo/" target="_blank" class="btn btn-primary">
+            🎉 Live Demo
+          </a>
         </div>
 
       </div>
 
+      <!-- ================= PROJECT 03 ================= -->
+
       <div class="proj-card reveal">
 
-        <span class="proj-emoji">📄</span>
+        <span class="proj-emoji">🤖</span>
 
         <div class="proj-num">PROJECT 03</div>
 
         <div class="proj-title">
-          OCR Mark Analysis
+          AI Resume UpSkill
         </div>
 
         <div class="proj-desc">
-          Worked on OCR-based answer sheet mark extraction and academic data processing system.
+          AI-powered web application that analyzes resumes, calculates ATS scores, identifies missing skills, recommends improvements, and generates interview questions using Generative AI.
         </div>
 
         <div class="proj-tags">
-          <span class="proj-tag">OCR</span>
-          <span class="proj-tag">Web App</span>
-          <span class="proj-tag">Analysis</span>
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Flask</span>
+          <span class="proj-tag">MySQL</span>
+          <span class="proj-tag">Generative AI</span>
+        </div>
+
+        <div class="hero-cta" style="margin-top:20px;">
+          <a href="#" class="btn btn-outline">
+            🚧 Under Development
+          </a>
         </div>
 
       </div>
 
-    </div>
+        <!-- ================= PROJECT 04 ================= -->
 
-  </div>
+        <div class="proj-card reveal">
+
+        <span class="proj-emoji">🎓</span>
+
+        <div class="proj-num">TEAM PROJECT</div>
+
+        <div class="proj-title">
+            THINKBIT Symposium Website
+        </div>
+
+        <div class="proj-desc">
+            Collaborated with a development team to build the official THINKBIT National Level Technical Symposium website. Contributed to responsive web pages, UI implementation, and event registration features for the live symposium platform.
+        </div>
+
+        <div class="proj-tags">
+            <span class="proj-tag">Responsive Design</span>
+            <span class="proj-tag">Team Project</span>
+            <span class="proj-tag">Frontend</span>
+            <span class="proj-tag">College Symposium</span>
+            <span class="proj-tag">Live Website</span>
+        </div>
+
+        <div class="hero-cta" style="margin-top:20px;">
+            <a href="https://thinkbit.mzcet.in/" target="_blank" class="btn btn-primary">
+            🌐 Visit Website
+            </a>
+        </div>
+
+        </div>
+
+        <!-- ================= PROJECT 05 ================= -->
+
+        <div class="proj-card reveal">
+
+        <span class="proj-emoji">🎮</span>
+
+        <div class="proj-num">FIRST YEAR PROJECT</div>
+
+        <div class="proj-title">
+            Link-O-Link Symposium Game
+        </div>
+
+        <div class="proj-desc">
+            Developed an interactive web-based game for the THINKBIT symposium during my first year of engineering. The game was designed to engage participants through a fun and responsive browser experience.
+        </div>
+
+        <div class="proj-tags">
+            <span class="proj-tag">HTML</span>
+            <span class="proj-tag">CSS</span>
+            <span class="proj-tag">JavaScript</span>
+            <span class="proj-tag">Game Development</span>
+        </div>
+
+        <div class="hero-cta" style="margin-top:20px;">
+            <a href="https://link-o-link.vercel.app/" target="_blank" class="btn btn-primary">
+            🎮 Play Game
+            </a>
+        </div>
+
+        </div>
+
+        <!-- ================= PROJECT 06 ================= -->
+
+        <div class="proj-card reveal">
+
+        <span class="proj-emoji">🥗</span>
+
+        <div class="proj-num">AI PROJECT</div>
+
+        <div class="proj-title">
+            FoodsLens AI
+        </div>
+
+        <div class="proj-desc">
+            An AI-powered food recognition and nutrition assistant that analyzes food images, estimates nutritional values, provides personalized health insights, recommends healthier alternatives, and tracks daily eating habits through an interactive dashboard.
+        </div>
+
+        <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">Computer Vision</span>
+            <span class="proj-tag">Machine Learning</span>
+            <span class="proj-tag">Flask</span>
+            <span class="proj-tag">Generative AI</span>
+        </div>
+
+        <div class="hero-cta" style="margin-top:20px;">
+            <a href="#" class="btn btn-outline">
+            🚧 Coming Soon
+            </a>
+        </div>
+
+        </div>
 
 </section>
 
@@ -1137,51 +1316,99 @@
 
 <section id="contact">
 
-  <div class="section-inner">
+    <div class="section-inner">
 
-    <span class="section-tag">Contact</span>
+        <span class="section-tag">Contact</span>
 
-    <h2 class="section-title">
-      Let's <span class="accent">Connect.</span>
-    </h2>
+        <h2 class="section-title">
+            Let's <span class="accent">Connect.</span>
+        </h2>
 
-    <div class="contact-wrapper">
+        <div class="contact-wrapper">
 
-      <div class="contact-card">
+            <!-- Left Card -->
 
-        <div class="contact-heading">
-          Ready to work together?
+            <div class="contact-card">
+
+                <div>
+
+                    <div class="contact-heading">
+                        Ready to work together?
+                    </div>
+
+                    <div class="contact-text">
+                        I'm currently open to internships, freelance projects,
+                        AI development, web development, and exciting collaborations.
+                        Feel free to reach out anytime.
+                    </div>
+
+                </div>
+
+                <div class="hero-cta contact-btn">
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kaniha1702@gmail.com&su=Project%20Inquiry&body=Hi%20Kaniha,%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%0A%0AThanks!"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                        🚀 Let's Work Together
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right Card -->
+
+            <div class="contact-card">
+
+                <div class="contact-links">
+
+                    <a href="mailto:kaniha1702@gmail.com"
+                       class="contact-link">
+
+                        <div>
+
+                            <strong>📧 Email</strong>
+                            <span>kaniha1702@gmail.com</span>
+
+                        </div>
+
+                    </a>
+
+                    <a href="https://linkedin.com/in/kaniha17"
+                       target="_blank"
+                       class="contact-link">
+
+                        <div>
+
+                            <strong>💼 LinkedIn</strong>
+                            <span>linkedin.com/in/kaniha17</span>
+
+                        </div>
+
+                    </a>
+
+                    <a href="https://wa.me/917604924704"
+                       target="_blank"
+                       class="contact-link">
+
+                        <div>
+
+                            <strong>💬 WhatsApp</strong>
+                            <span>Let's discuss your project</span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="contact-text">
-          Open to internships, freelance projects, collaborations, and opportunities related to AI, Machine Learning, and Web Development.
-        </div>
-
-      </div>
-
-      <div class="contact-card">
-
-        <div class="contact-links">
-
-          <a href="mailto:kaniha1702@gmail.com" class="contact-link">
-            📧 kaniha1702@gmail.com
-          </a>
-
-          <a href="https://linkedin.com/in/kaniha17" target="_blank" class="contact-link">
-            💼 LinkedIn Profile
-          </a>
-
-          <a href="https://github.com/Kaniha-R" target="_blank" class="contact-link">
-            💻 GitHub Profile
-          </a>
-
-        </div>
-
-      </div>
 
     </div>
-
-  </div>
 
 </section>
 
